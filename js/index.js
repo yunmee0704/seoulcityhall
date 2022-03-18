@@ -8,6 +8,7 @@ $(function(){
     $(target).addClass('on').siblings().removeClass('on')
     
     
+    
   })
 //메인슬라이드
   const main = new Swiper(".sc_news .slide_area .main", {
@@ -26,27 +27,40 @@ $(function(){
       prevEl: ".swiper-button-prev",
     },
   });
-  
-//  메인 슬라이드 멈춤/재생버튼
-$('.stop').click(function() {
-  
-  $('.stop').css({display:"none"})
-  $('.stop').css({zIndex:"0"})
-  
-  $('.play').css({display:"block"})
-  $('.play').css({zIndex:"99"})
-  main.autoplay.stop();
-  return false;
-});
-$('.play').click(function() {
+
  
-  $('.play').css({display:"none"})
-  $('.play').css({zIndex:"0"})
-  $('.stop').css({display:"block"})
-  $('.stop').css({zIndex:"99"})
-  main.autoplay.start();
-  return false;
-});
+//  메인 슬라이드 멈춤/재생버튼
+
+  
+  $('.stop').click(function() {
+   if($('.sc_news .slide_area .main').hasClass('on')){
+     alert('on')
+    main.autoplay.stop();
+    $('.stop').css({display:"none"})
+    $('.stop').css({zIndex:"0"})
+    
+    $('.play').css({display:"block"})
+    $('.play').css({zIndex:"99"})
+   
+    return false;
+   }
+   
+  });
+  $('.play').click(function() {
+   
+    $('.play').css({display:"none"})
+    $('.play').css({zIndex:"0"})
+    $('.stop').css({display:"block"})
+    $('.stop').css({zIndex:"99"})
+    main.autoplay.start();
+    return false;
+  });
+
+
+
+
+
+
 
 
 //bottom-menu
