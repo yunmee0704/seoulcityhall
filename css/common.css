@@ -1,0 +1,115 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.swiper-button-next::after{display: none;}
+.swiper-button-prev::after{display: none;}
+.swiper-button-prev.swiper-button-disabled{opacity: 1 !important;}
+
+header .top_area .nav_area h1,
+.bottom_area .search,
+.sc_board>div .more,
+.sc_news_list .title_wrap a .all,
+.info .call_center a,
+.sc_news .swiper .swiper-button-next,
+.sc_news .swiper .swiper-button-prev,
+.sc_news .swiper .stop,
+.sc_news .swiper .play, 
+.banner_slide .swiper-button-play,
+.banner_slide .swiper-button-prev,
+.banner_slide .swiper-button-stop,
+.banner_slide .swiper-button-next{
+    background-image: url(../img/sp_bg.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+header .bottom_area h1 {
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 180px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sc_news .slide_area .news,
+.sc_news .slide_area .citizen {
+    background-image: url(../img/icon2.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.sc_main_service ul li:first-child a i,
+.sc_main_service ul li:nth-child(2) a i,
+.sc_main_service ul li:nth-child(3) a i,
+.sc_main_service ul li:nth-child(4) a i,
+.sc_main_service ul li:nth-child(5) a i,
+.sc_main_service ul li:nth-child(6) a i,
+.sc_main_service ul li:nth-child(7) a i,
+.sc_main_service ul li:nth-child(8) a i,
+.sc_main_service ul li:nth-child(9) a i,
+.sc_main_service ul li:nth-child(10) a i {
+    background-image: url(../img/service_icon.png);
+    background-repeat: no-repeat;
+    background-size: 1140px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sns .sns_list a:nth-child(1),
+.sns .sns_list a:nth-child(2),
+.sns .sns_list a:nth-child(3),
+.sns .sns_list a:nth-child(4),
+.sns .sns_list a:nth-child(5),
+.sns .sns_list a:nth-child(6)
+ {
+    background-image: url(https://www.seoul.go.kr/res_newseoul/images/main/ico_sns_list_2021.png?ver=20210401);
+    background-repeat: no-repeat;
+    background-size: 280px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mid_wrap .sns_wrap a:nth-child(1),
+.mid_wrap .sns_wrap a:nth-child(2),
+.mid_wrap .sns_wrap a:nth-child(3),
+.mid_wrap .sns_wrap a:nth-child(4),
+.mid_wrap .sns_wrap a:nth-child(5),
+.mid_wrap .sns_wrap a:nth-child(6),
+.mid_wrap .sns_wrap a:nth-child(1):hover,
+.mid_wrap .sns_wrap a:nth-child(2):hover,
+.mid_wrap .sns_wrap a:nth-child(3):hover,
+.mid_wrap .sns_wrap a:nth-child(4):hover,
+.mid_wrap .sns_wrap a:nth-child(5):hover,
+.mid_wrap .sns_wrap a:nth-child(6):hover
+{
+    background-image: url(https://www.seoul.go.kr/res_newseoul/images/main/icon_set_sns.png);
+    background-repeat: no-repeat;
+    background-size: 175px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sns .title_wrap i{
+    background-image: url(https://www.seoul.go.kr/res_newseoul/images/main/ico_sns_list_2021.png?ver=20210113);
+    background-repeat: no-repeat;
+    background-size: 280px;
+    display: inline-block;
+    vertical-align: top;
+}
