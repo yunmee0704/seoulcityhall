@@ -34,7 +34,7 @@ $(function(){
   
   $('.stop').click(function() {
    if($('.sc_news .slide_area .main').hasClass('on')){
-     alert('on')
+    
     main.autoplay.stop();
     $('.stop').css({display:"none"})
     $('.stop').css({zIndex:"0"})
@@ -80,7 +80,7 @@ $(function(){
   
 $('.stop').click(function() {
   if($('.sc_news .slide_area .citi').hasClass('on')){
-    alert('on')
+    
    citi.autoplay.stop();
    $('.stop').css({display:"none"})
    $('.stop').css({zIndex:"0"})
