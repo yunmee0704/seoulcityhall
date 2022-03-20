@@ -1,6 +1,6 @@
 $(function(){
 
-
+//비주얼 슬라이드 활성화 버튼 (주요뉴스/시민참여)
   $('.button>div').click(function(e){
     e.preventDefault();
    $(this).addClass('on').siblings().removeClass('on');
@@ -10,7 +10,7 @@ $(function(){
     
     
   })
-//메인슬라이드
+//주요뉴스 슬라이드
   const main = new Swiper(".sc_news .slide_area .main", {
     autoplay: {
      delay:2000,
@@ -29,7 +29,7 @@ $(function(){
   });
 
  
-//  메인 슬라이드 멈춤/재생버튼
+//  메인(주요뉴스) 슬라이드 멈춤/재생버튼
 
   
   $('.stop').click(function() {
@@ -56,11 +56,51 @@ $(function(){
     return false;
   });
 
+//시민참여 슬라이드
+  const citi = new Swiper(".sc_news .slide_area .citi", {
+    autoplay: {
+     delay:2000,
+      disableOnInteraction: false,
+    },
+   speed:1000,
+    loop:'true',
+    pagination: {
+      el: ".citi .swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
 
+//  메인(시민참여) 슬라이드 멈춤/재생버튼
 
-
-
+  
+$('.stop').click(function() {
+  if($('.sc_news .slide_area .citi').hasClass('on')){
+    alert('on')
+   citi.autoplay.stop();
+   $('.stop').css({display:"none"})
+   $('.stop').css({zIndex:"0"})
+   
+   $('.play').css({display:"block"})
+   $('.play').css({zIndex:"99"})
+  
+   return false;
+  }
+  
+ });
+ $('.play').click(function() {
+  
+   $('.play').css({display:"none"})
+   $('.play').css({zIndex:"0"})
+   $('.stop').css({display:"block"})
+   $('.stop').css({zIndex:"99"})
+   citi.autoplay.start();
+   return false;
+ });
 
 
 //bottom-menu
